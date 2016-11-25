@@ -1,2 +1,0 @@
-# plantscare
-App integradora

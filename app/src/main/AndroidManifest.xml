@@ -16,13 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".Menu"></activity>
-<<<<<<< HEAD
         <activity android:name=".Registro" />
         <activity android:name=".Recuperar_contra" />
         <activity android:name=".Lista_plan"></activity>
-=======
-
->>>>>>> origin/master
     </application>
-
 </manifest>

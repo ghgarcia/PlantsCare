@@ -15,6 +15,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Registro" />
+        <activity android:name=".Recuperar_contra" />
+        <activity android:name=".Lista_plan"></activity>
     </application>
 
 </manifest>

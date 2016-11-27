@@ -11,7 +11,7 @@ public class Menu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
-        Toolbar toolbar  = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        //Toolbar toolbar  = (Toolbar) findViewById(R.id.toolbar);
+        //setSupportActionBar(toolbar);
     }
 }

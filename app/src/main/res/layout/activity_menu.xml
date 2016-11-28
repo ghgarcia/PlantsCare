@@ -16,24 +16,125 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            app:srcCompat="@android:color/darker_gray"
-            android:id="@+id/imageView8"
-            android:background="?android:attr/textSelectHandle" />
-
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <EditText
+            <TableLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textPersonName"
-                android:text="Name"
-                android:ems="10"
-                android:id="@+id/editText" />
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        app:srcCompat="@drawable/mas_visitadas"
+                        android:id="@+id/MasVisitadas"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp" />
+
+                    <ImageView
+                        app:srcCompat="@drawable/solares"
+                        android:id="@+id/Solares"
+                        android:layout_margin="10dp"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        app:srcCompat="@drawable/sombra"
+                        android:id="@+id/Sombra"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp" />
+
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        app:srcCompat="@drawable/interior"
+                        android:id="@+id/Interior"
+                        android:layout_margin="10dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        app:srcCompat="@drawable/medicinales"
+                        android:id="@+id/Medicinales"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp" />
+
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        app:srcCompat="@drawable/temporada"
+                        android:id="@+id/Temporada"
+                        android:layout_margin="10dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        app:srcCompat="@drawable/deserticas"
+                        android:id="@+id/Deserticas"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp" />
+
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        app:srcCompat="@drawable/acuaticas"
+                        android:id="@+id/Acuaticas"
+                        android:layout_margin="10dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        app:srcCompat="@drawable/palmas"
+                        android:id="@+id/Palmas"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp" />
+
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        app:srcCompat="@drawable/arbustos"
+                        android:id="@+id/Arbustos"
+                        android:layout_margin="10dp" />
+                </TableRow>
+            </TableLayout>
         </ScrollView>
 
     </LinearLayout>

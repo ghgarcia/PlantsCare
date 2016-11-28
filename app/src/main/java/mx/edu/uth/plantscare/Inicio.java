@@ -20,7 +20,7 @@ public class Inicio extends Activity {
                 startActivity(intent);
                 Inicio.this.finish();
             }
-        }, 3000);
+        }, 2000);
 
     }
 }

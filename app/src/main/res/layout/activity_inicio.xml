@@ -9,29 +9,60 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="mx.edu.uth.plantscare.Inicio">
+    tools:context="mx.edu.uth.plantscare.Inicio"
+    android:background="@android:color/background_light">
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:weightSum="1">
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
         <ImageView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@mipmap/ic_launcher"
             android:id="@+id/imageView"
             android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true" />
-
-        <TextView
-            android:text="Plants Care"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView3"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/plants"
             android:textAlignment="center"
-            android:textSize="30sp" />
+            android:elevation="0dp"
+            android:soundEffectsEnabled="false"
+            tools:soundEffectsEnabled="?android:attr/windowShowWallpaper" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animationCache="false">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:text="Plants"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView3"
+                    android:textAlignment="center"
+                    android:textSize="30sp"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/black_overlay" />
+
+                <TextView
+                    android:text="Care"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView4"
+                    android:textSize="30sp"
+                    android:textColor="@android:color/black" />
+            </TableRow>
+
+        </TableLayout>
 
     </LinearLayout>
 

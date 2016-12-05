@@ -52,16 +52,6 @@ public class MenuPrincipal extends AppCompatActivity
     }
 
     @Override
-    public void onBackPressed() {
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        if (drawer.isDrawerOpen(GravityCompat.START)) {
-            drawer.closeDrawer(GravityCompat.START);
-        } else {
-            super.onBackPressed();
-        }
-    }
-
-    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_principal, menu);
@@ -83,42 +73,76 @@ public class MenuPrincipal extends AppCompatActivity
         return super.onOptionsItemSelected(item);
     }
 
-    @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
+        if (id == R.id.Inicio) {
             //Asignamos el fragment initially
             Principal fragment = new Principal();
             android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
             fragmentTransaction.replace(R.id.fragment_container, fragment);
             fragmentTransaction.commit();
             // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.Registrate) {
             //Asignamos el fragment initially
-            Galeria fragment2 = new Galeria();
+            Registro registro = new Registro();
             android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-            fragmentTransaction.replace(R.id.fragment_container, fragment2);
+            fragmentTransaction.replace(R.id.fragment_container, registro);
             fragmentTransaction.commit();
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.IniciarSesion) {
             //Asignamos el fragment initially
-            Principal fragment = new Principal();
+            IniciarSesion is = new IniciarSesion();
             android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-            fragmentTransaction.replace(R.id.fragment_container, fragment);
+            fragmentTransaction.replace(R.id.fragment_container, is);
             fragmentTransaction.commit();
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.ListaPlantas) {
 
-        } else if (id == R.id.nav_share) {
+        } else if (id == R.id.EnviarCorreo) {
 
-        } else if (id == R.id.nav_send) {
+        }
+        else if (id == R.id.compartir) {
+
+        }
+        else if (id == R.id.nav_send) {
 
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    /*public void onNavigationDrawerItemSelected(int position) {
+
+        FragmentManager fragmentManager = getSupportFragmentManager();
+
+        switch (position) {
+            case 0:
+                fragmentManager.beginTransaction()
+                        .replace(R.id.fragment_container, new Principal().addToBackStack().commit();
+                break;
+        }
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (getFragmentManager().getBackStackEntryCount() > 0) {
+            getFragmentManager().popBackStack();
+        } else {
+            super.onBackPressed();
+        }
+    }*/
+
+    @Override
+    public void onBackPressed() {
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        if (drawer.isDrawerOpen(GravityCompat.START)) {
+            drawer.closeDrawer(GravityCompat.START);
+        } else {
+            super.onBackPressed();
+        }
     }
 }

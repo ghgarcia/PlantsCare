@@ -1,20 +1,18 @@
 package mx.edu.uth.plantscare;
 
-import android.content.Context;
-import android.net.Uri;
+
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import mx.edu.uth.plantscare.R;
 
-/**
- * A simple {@link Fragment} subclass.
- */
-public class Galeria extends Fragment {
+public class IniciarSesion extends Fragment {
 
-    public Galeria() {
+
+    public IniciarSesion() {
         // Required empty public constructor
     }
 
@@ -23,6 +21,7 @@ public class Galeria extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_galeria, container, false);
+        return inflater.inflate(R.layout.fragment_iniciar_sesion, container, false);
     }
+
 }

@@ -1,13 +1,18 @@
 package mx.edu.uth.plantscare;
 
-import android.support.v7.app.AppCompatActivity;
+import android.support.v4.app.Fragment;
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
-public class Recuperar_contra extends AppCompatActivity {
+public class Recuperar_contra  extends Fragment {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_recuperar_contra);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View v = inflater.inflate(R.layout.fragment_principal, container, false);
+
+        return v;
     }
 }

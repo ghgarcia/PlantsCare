@@ -3,7 +3,6 @@ package mx.edu.uth.plantscare;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 public class Inicio extends Activity {
@@ -21,6 +20,5 @@ public class Inicio extends Activity {
                 Inicio.this.finish();
             }
         }, 2000);
-
     }
 }

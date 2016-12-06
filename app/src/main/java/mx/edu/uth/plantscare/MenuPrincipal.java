@@ -99,6 +99,10 @@ public class MenuPrincipal extends AppCompatActivity
             fragmentTransaction.replace(R.id.fragment_container, is);
             fragmentTransaction.commit();
         } else if (id == R.id.ListaPlantas) {
+            Busqueda bu = new Busqueda();
+            android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.fragment_container, bu);
+            fragmentTransaction.commit();
 
         } else if (id == R.id.EnviarCorreo) {
 

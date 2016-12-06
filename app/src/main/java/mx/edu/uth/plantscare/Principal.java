@@ -35,7 +35,7 @@ public class Principal extends Fragment {
             public void onClick(View v) {
                 //new Factory.ConsultarDatos().execute("http://192.168.1.104/PlantsCare/consulta.php?idPlanta=2");
 
-                IniciarSesion fragment2 = new IniciarSesion();
+                Busqueda fragment2 = new Busqueda();
                 android.support.v4.app.FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
                 fragmentTransaction.replace(R.id.fragment_container, fragment2);
                 fragmentTransaction.commit();
